@@ -47,29 +47,29 @@
 <!-- -------------- -->
 
 # VueRouter 本體
-  * 順序有差，從上到下檢查，越重要的放越前
-  ```js
-    const router = new VueRouter({
-      routes: [ // 放所有需要的網址
-        {
-          path: '/', // url路徑
-          name: 'list', // 路由名字 (調用方便)
-          component: List, // 顯示的元件
-        },
-        {
-          path: '/update/:id',
-          name: 'update',
-          component: Edit,
-        },
-        // 例外處理
-        // 可透過 redirect 導回首頁 或 另外製作 404頁面
-        {
-          path: '*',
-          redirect: '/',
-        },
-      ],
-    })
-  ```
+* 順序有差，從上到下檢查，越重要的放越前
+```js
+  const router = new VueRouter({
+    routes: [ // 放所有需要的網址
+      {
+        path: '/', // url路徑
+        name: 'list', // 路由名字 (調用方便)
+        component: List, // 顯示的元件
+      },
+      {
+        path: '/update/:id',
+        name: 'update',
+        component: Edit,
+      },
+      // 例外處理
+      // 可透過 redirect 導回首頁 或 另外製作 404頁面
+      {
+        path: '*',
+        redirect: '/',
+      },
+    ],
+  })
+```
 <!-- -------------- -->
 
 # VueRouter params參數

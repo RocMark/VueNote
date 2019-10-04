@@ -1,5 +1,11 @@
 ## Vue CL3 建立
 
+## 安裝 VueCli 工具
+```
+  npm install -g @vue/cli
+```
+
+
 ## 建立專案
 - vue init webpack-simple 專案名 (Vue CLI 2.0)
 - vue create 專案名 (Vue CIL 3)
